@@ -1,0 +1,6 @@
+.about-visual{
+    height: 400px;
+    background-image: url(../img/image1.jpg);
+    background-size: cover;
+    background-position: center;
+}

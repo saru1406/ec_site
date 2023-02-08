@@ -25,3 +25,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::view('/admin/login', 'admin/login');
 Route::post('/admin/login', [App\Http\Controllers\Admin\LoginController::class, 'login'])->name('admin.login');
 Route::post('admin/logout', [App\Http\Controllers\Admin\LoginController::class,'logout']);
+
+Route::get('/about', function () {
+    return view('about');
+});
